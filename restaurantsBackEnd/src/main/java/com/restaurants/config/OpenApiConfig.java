@@ -1,5 +1,9 @@
+/*
 package com.restaurants.config;
 
+import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.License;
 import org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties;
 import org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties;
 import org.springframework.boot.actuate.autoconfigure.web.server.ManagementPortType;
@@ -8,49 +12,31 @@ import org.springframework.boot.actuate.endpoint.web.*;
 import org.springframework.boot.actuate.endpoint.web.annotation.ControllerEndpointsSupplier;
 import org.springframework.boot.actuate.endpoint.web.annotation.ServletEndpointsSupplier;
 import org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping;
-import org.springframework.core.env.Environment;
-import org.springframework.util.StringUtils;
-import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.service.Contact;
-import io.swagger.v3.oas.models.info.Info;
-import io.swagger.models.License;
-import io.swagger.v3.oas.models.OpenAPI;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.util.Predicates;
-import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.service.ApiInfo;
-import springfox.documentation.spi.DocumentationType;
-import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
-import io.swagger.v3.oas.models.servers.Server;
+import io.swagger.v3.oas.models.ExternalDocumentation;
+import org.springframework.core.env.Environment;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.function.Predicate;
 
 @Configuration
-@EnableSwagger2
-public class SwaggerConfig {
+public class OpenApiConfig {
+
     @Bean
-    public Docket api() {
-    	return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
-                //.apis(Predicates.negate(RequestHandlerSelectors.basePackage("com.restaurants")))
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .paths(Predicate.not(PathSelectors.regex("/error.*")))
-                .paths(Predicate.not(PathSelectors.regex("/actuator.*")))
-                .build();
+    public OpenAPI awesomeAPI() {
+        return new OpenAPI()
+                .info(new Info().title("Restaurant Table Booking")
+                        .description("Restaurant Table Booking By SpringBoot")
+                        .version("1.0")
+                        .license(new License().name("Apache 2.0").url("http://www.apache.org/licenses/LICENSE-2.0")))
+                .externalDocs(new ExternalDocumentation()
+                        .description("Rajesh Sarkar, text2rajeshsarkar@gmail.com")
+                        .url("http://localhost.com"));
     }
 
-    private ApiInfo apiInfo() {
-
-        Contact contact = new Contact("admin@gmail.com","admin","https://localhost.com");
-
-        return new ApiInfo("Table Booking Management API","Table Booking Management API",
-                "1.0","localhost",contact,"licence","https://localhost.com/terms",new ArrayList<>());
-    }
 
     @Bean
     public WebMvcEndpointHandlerMapping webEndpointServletHandlerMapping(
@@ -82,4 +68,5 @@ public class SwaggerConfig {
                 (StringUtils.hasText(basePath) ||
                         ManagementPortType.get(environment).equals(ManagementPortType.DIFFERENT));
     }
-}
+
+}*/
