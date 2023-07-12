@@ -3,7 +3,7 @@ package com.restaurants.controller;
 import com.restaurants.exception.ErrorResponse;
 import com.restaurants.exception.ServiceException;
 import com.restaurants.model.Customer;
-import com.restaurants.ICustomerService;
+import com.restaurants.service.ICustomerService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

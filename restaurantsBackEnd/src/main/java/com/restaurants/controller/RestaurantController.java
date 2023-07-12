@@ -1,6 +1,6 @@
 package com.restaurants.controller;
 
-import com.restaurants.IRestaurantService;
+import com.restaurants.service.IRestaurantService;
 import com.restaurants.exception.ErrorResponse;
 import com.restaurants.exception.ServiceException;
 import com.restaurants.model.Restaurant;

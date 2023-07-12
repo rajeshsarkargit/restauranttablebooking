@@ -1,10 +1,10 @@
-package com.restaurants.impl;
+package com.restaurants.service.impl;
 
 import com.restaurants.exception.ErrorResponse;
 import com.restaurants.exception.ServiceException;
 import com.restaurants.model.Customer;
 import com.restaurants.repository.CustomerRepository;
-import com.restaurants.ICustomerService;
+import com.restaurants.service.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

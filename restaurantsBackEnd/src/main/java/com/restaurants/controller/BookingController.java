@@ -4,18 +4,16 @@ import com.restaurants.exception.ErrorResponse;
 import com.restaurants.exception.ServiceException;
 import com.restaurants.model.Booking;
 import com.restaurants.model.BookingWrapper;
-import com.restaurants.IBookingService;
+import com.restaurants.service.IBookingService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static com.restaurants.constants.Constants.CUSTOMER_ALREADY_EXISTS;
 import static com.restaurants.constants.Constants.PLEASE_PROVIDE_BOOKING_ID;
 
 @RestController

@@ -1,11 +1,9 @@
 package com.restaurants.service;
 
 import com.restaurants.exception.ServiceException;
-import com.restaurants.impl.BookingServiceImpl;
-import com.restaurants.impl.RestaurantServiceImpl;
+import com.restaurants.service.impl.BookingServiceImpl;
 import com.restaurants.model.Booking;
 import com.restaurants.model.BookingWrapper;
-import com.restaurants.model.Restaurant;
 import com.restaurants.repository.BookingRepository;
 import com.restaurants.repository.CustomerRepository;
 import com.restaurants.repository.RestaurantRepository;

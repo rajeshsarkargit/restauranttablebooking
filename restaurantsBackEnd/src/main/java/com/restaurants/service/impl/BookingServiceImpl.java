@@ -1,6 +1,6 @@
-package com.restaurants.impl;
+package com.restaurants.service.impl;
 
-import com.restaurants.IBookingService;
+import com.restaurants.service.IBookingService;
 import com.restaurants.exception.ErrorResponse;
 import com.restaurants.exception.ServiceException;
 import com.restaurants.model.*;

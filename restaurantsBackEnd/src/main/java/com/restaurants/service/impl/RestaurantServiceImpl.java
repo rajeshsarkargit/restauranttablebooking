@@ -1,6 +1,6 @@
-package com.restaurants.impl;
+package com.restaurants.service.impl;
 
-import com.restaurants.IRestaurantService;
+import com.restaurants.service.IRestaurantService;
 import com.restaurants.model.Restaurant;
 import com.restaurants.repository.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;

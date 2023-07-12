@@ -2,7 +2,7 @@ package com.restaurants.service;
 
 import com.restaurants.model.Restaurant;
 import com.restaurants.repository.RestaurantRepository;
-import com.restaurants.impl.RestaurantServiceImpl;
+import com.restaurants.service.impl.RestaurantServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

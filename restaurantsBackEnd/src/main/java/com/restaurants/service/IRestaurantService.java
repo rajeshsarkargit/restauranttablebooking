@@ -1,4 +1,4 @@
-package com.restaurants;
+package com.restaurants.service;
 
 import com.restaurants.model.Restaurant;
 

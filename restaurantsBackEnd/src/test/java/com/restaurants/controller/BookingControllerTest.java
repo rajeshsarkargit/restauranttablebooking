@@ -1,9 +1,8 @@
 package com.restaurants.controller;
 
-import com.restaurants.impl.BookingServiceImpl;
+import com.restaurants.service.impl.BookingServiceImpl;
 import com.restaurants.model.Booking;
 import com.restaurants.model.BookingWrapper;
-import com.restaurants.model.Restaurant;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

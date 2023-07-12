@@ -1,6 +1,6 @@
 package com.restaurants.controller;
 
-import com.restaurants.impl.RestaurantServiceImpl;
+import com.restaurants.service.impl.RestaurantServiceImpl;
 import com.restaurants.model.Restaurant;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

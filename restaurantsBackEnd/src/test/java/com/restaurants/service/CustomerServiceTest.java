@@ -1,11 +1,8 @@
 package com.restaurants.service;
 
-import com.restaurants.impl.CustomerServiceImpl;
-import com.restaurants.impl.RestaurantServiceImpl;
+import com.restaurants.service.impl.CustomerServiceImpl;
 import com.restaurants.model.Customer;
-import com.restaurants.model.Restaurant;
 import com.restaurants.repository.CustomerRepository;
-import com.restaurants.repository.RestaurantRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -17,7 +14,6 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.restaurants.constants.Constants.CUSTOMER_UPDATED_SUCCESSFULLY;
-import static com.restaurants.constants.Constants.RESTAURANT_DELETED_SUCCESSFULLY;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
